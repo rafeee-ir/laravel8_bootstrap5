@@ -12,11 +12,7 @@ class UserController extends Controller
 {
     public function login()
     {
-        if (Auth::attempt([
-                'email' => request('email'),
-                'password' => request('password'),
-                'org_id' => request('org_id'),
-            ])) {
+        if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
             $token = auth()->user()->createToken('NewToken')->accessToken;
             return response()->json([
                 'token' => $token,
@@ -55,7 +51,6 @@ class UserController extends Controller
             'email' => 'required|email',
             'password' => 'required',
             'c_password' => 'required|same:password',
-            'org_id' => 'required',
         ]);
 
         if($validator->fails()){
