@@ -1,66 +1,66 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @font-face {
   font-family: Vazir;
-  src: url(/fonts/vendor/vazir-dist/Vazir-Regular.eot?d4fcf73064e94d3dfd86fa84ce0df7b5);
-  src: url(/fonts/vendor/vazir-dist/Vazir-Regular.eot?d4fcf73064e94d3dfd86fa84ce0df7b5?#iefix) format('embedded-opentype'),
-       url(/fonts/vendor/vazir-dist/Vazir-Regular.woff2?7a044624c002518c123ae3536275ac96) format('woff2'),
-       url(/fonts/vendor/vazir-dist/Vazir-Regular.woff?e2ff38653f2011021d5542351ad99cc0) format('woff'),
-       url(/fonts/vendor/vazir-dist/Vazir-Regular.ttf?ca0c1f094f72b827c4bf5fff39087293) format('truetype');
+  src: url(/fonts/vendor/vazir-dist/Vazir-Regular.eot?a931e9e5d10f01bd877230e147f15e9b);
+  src: url(/fonts/vendor/vazir-dist/Vazir-Regular.eot?a931e9e5d10f01bd877230e147f15e9b?#iefix) format('embedded-opentype'),
+       url(/fonts/vendor/vazir-dist/Vazir-Regular.woff2?76202bdf256486f980f76967242f936a) format('woff2'),
+       url(/fonts/vendor/vazir-dist/Vazir-Regular.woff?fda46c6a3ff88fa457c7f6fc4b138d93) format('woff'),
+       url(/fonts/vendor/vazir-dist/Vazir-Regular.ttf?9a31e25718b05226d73c099e68a0a7f3) format('truetype');
   font-weight: normal;
   font-display:swap;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url(/fonts/vendor/vazir-dist/Vazir-Bold.eot?65d96f2cbd6791bbeff8b0241b6b8a27);
-  src: url(/fonts/vendor/vazir-dist/Vazir-Bold.eot?65d96f2cbd6791bbeff8b0241b6b8a27?#iefix) format('embedded-opentype'),
-       url(/fonts/vendor/vazir-dist/Vazir-Bold.woff2?aa1e9b022f3108cca7624f6f4d9a5508) format('woff2'),
-       url(/fonts/vendor/vazir-dist/Vazir-Bold.woff?b6cc7ca33b753707fec846749c543cd5) format('woff'),
-       url(/fonts/vendor/vazir-dist/Vazir-Bold.ttf?fbcdbb47a09af33eee46e12d78e97d2c) format('truetype');
+  src: url(/fonts/vendor/vazir-dist/Vazir-Bold.eot?3f23497b5cb45818b1d483e012c06873);
+  src: url(/fonts/vendor/vazir-dist/Vazir-Bold.eot?3f23497b5cb45818b1d483e012c06873?#iefix) format('embedded-opentype'),
+       url(/fonts/vendor/vazir-dist/Vazir-Bold.woff2?f2b2854802c7865040db9a79d3ba668f) format('woff2'),
+       url(/fonts/vendor/vazir-dist/Vazir-Bold.woff?18bc5652323bd377b7af3197c66d85d1) format('woff'),
+       url(/fonts/vendor/vazir-dist/Vazir-Bold.ttf?2656bb7c8588fffc5e9cd96abac23ae4) format('truetype');
   font-weight: bold;
   font-display:swap;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url(/fonts/vendor/vazir-dist/Vazir-Thin.eot?65b3845ce0aa753ce08d654d46ea9fd3);
-  src: url(/fonts/vendor/vazir-dist/Vazir-Thin.eot?65b3845ce0aa753ce08d654d46ea9fd3?#iefix) format('embedded-opentype'),
-       url(/fonts/vendor/vazir-dist/Vazir-Thin.woff2?d96998b37a0a5556cc9807d68f97c099) format('woff2'),
-       url(/fonts/vendor/vazir-dist/Vazir-Thin.woff?5319a0b8159cc4f6ec5f37ca23c0e349) format('woff'),
-       url(/fonts/vendor/vazir-dist/Vazir-Thin.ttf?32a0cd55a405fe16d775b6224f015e4d) format('truetype');
+  src: url(/fonts/vendor/vazir-dist/Vazir-Thin.eot?cbfb13dfb6f8a89afa269399f717ca32);
+  src: url(/fonts/vendor/vazir-dist/Vazir-Thin.eot?cbfb13dfb6f8a89afa269399f717ca32?#iefix) format('embedded-opentype'),
+       url(/fonts/vendor/vazir-dist/Vazir-Thin.woff2?a95f567efdaa75395d4349b28f8a8789) format('woff2'),
+       url(/fonts/vendor/vazir-dist/Vazir-Thin.woff?8c57333e7ee917ce4f8ddc3a76fcbf91) format('woff'),
+       url(/fonts/vendor/vazir-dist/Vazir-Thin.ttf?839c43390ae4bdda1f7759fd4a5a7169) format('truetype');
   font-weight: 100;
   font-display:swap;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url(/fonts/vendor/vazir-dist/Vazir-Light.eot?7ef237f36b15d06460cbdfd65b0ec57b);
-  src: url(/fonts/vendor/vazir-dist/Vazir-Light.eot?7ef237f36b15d06460cbdfd65b0ec57b?#iefix) format('embedded-opentype'),
-       url(/fonts/vendor/vazir-dist/Vazir-Light.woff2?605c911e7124a010c959c9214fcf759b) format('woff2'),
-       url(/fonts/vendor/vazir-dist/Vazir-Light.woff?72fe607f272a9e0dd9db92f847dd2a84) format('woff'),
-       url(/fonts/vendor/vazir-dist/Vazir-Light.ttf?c7fa990673029d9ee46de1c6fb404b91) format('truetype');
+  src: url(/fonts/vendor/vazir-dist/Vazir-Light.eot?0b667fe93e8f2cf7818ac601e0a006e9);
+  src: url(/fonts/vendor/vazir-dist/Vazir-Light.eot?0b667fe93e8f2cf7818ac601e0a006e9?#iefix) format('embedded-opentype'),
+       url(/fonts/vendor/vazir-dist/Vazir-Light.woff2?d90b95f7f1662299e42ae5d486847ae9) format('woff2'),
+       url(/fonts/vendor/vazir-dist/Vazir-Light.woff?8b04ee8b366c615cf70223a1d7505dd6) format('woff'),
+       url(/fonts/vendor/vazir-dist/Vazir-Light.ttf?e8755882c4bded9b6775a0974ef744bc) format('truetype');
   font-weight: 300;
   font-display:swap;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url(/fonts/vendor/vazir-dist/Vazir-Medium.eot?de735a5cea436783f4671270fe34b125);
-  src: url(/fonts/vendor/vazir-dist/Vazir-Medium.eot?de735a5cea436783f4671270fe34b125?#iefix) format('embedded-opentype'),
-       url(/fonts/vendor/vazir-dist/Vazir-Medium.woff2?8515e7551a208b1ee6c8055d7014df9b) format('woff2'),
-       url(/fonts/vendor/vazir-dist/Vazir-Medium.woff?1c85d2844c81c1295023b085eff5b8a5) format('woff'),
-       url(/fonts/vendor/vazir-dist/Vazir-Medium.ttf?4b148426e54df1b6e77986938a974159) format('truetype');
+  src: url(/fonts/vendor/vazir-dist/Vazir-Medium.eot?3774d5cc99558084510e53f365b8be23);
+  src: url(/fonts/vendor/vazir-dist/Vazir-Medium.eot?3774d5cc99558084510e53f365b8be23?#iefix) format('embedded-opentype'),
+       url(/fonts/vendor/vazir-dist/Vazir-Medium.woff2?30119dbd2c62631a4bd3da00f1bbba20) format('woff2'),
+       url(/fonts/vendor/vazir-dist/Vazir-Medium.woff?7e98757030a6d322ae83f4246a8d7310) format('woff'),
+       url(/fonts/vendor/vazir-dist/Vazir-Medium.ttf?571d33a677695b9f9ea0d383e87e7cfd) format('truetype');
   font-weight: 500;
   font-display:swap;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url(/fonts/vendor/vazir-dist/Vazir-Black.eot?3df9c3b21730b8111106e7efbe8e0dec);
-  src: url(/fonts/vendor/vazir-dist/Vazir-Black.eot?3df9c3b21730b8111106e7efbe8e0dec?#iefix) format('embedded-opentype'),
-       url(/fonts/vendor/vazir-dist/Vazir-Black.woff2?38a6a623badf0c130baf8d22ee35ddff) format('woff2'),
-       url(/fonts/vendor/vazir-dist/Vazir-Black.woff?cc89c4185ce7bd9f50668f1e89b4aed8) format('woff'),
-       url(/fonts/vendor/vazir-dist/Vazir-Black.ttf?ffc9e3a1afce20f58f386594de3325b8) format('truetype');
+  src: url(/fonts/vendor/vazir-dist/Vazir-Black.eot?ee2511788ab76fa1bed952c7e2ce98c9);
+  src: url(/fonts/vendor/vazir-dist/Vazir-Black.eot?ee2511788ab76fa1bed952c7e2ce98c9?#iefix) format('embedded-opentype'),
+       url(/fonts/vendor/vazir-dist/Vazir-Black.woff2?34d3683e2e178cde5ede3f5fbea51a93) format('woff2'),
+       url(/fonts/vendor/vazir-dist/Vazir-Black.woff?4eaf0a9d349059d65d6ec16d0bea7ecc) format('woff'),
+       url(/fonts/vendor/vazir-dist/Vazir-Black.ttf?1592f5d5c6a5dcafde8d89dfdfd81bc3) format('truetype');
   font-weight: 900;
   font-display:swap;
 }
@@ -10899,5 +10899,5 @@ textarea.form-control-lg {
   }
 }
 * {
-  font-family: "Vazir", sans-serif;
+  font-family: Vazir, sans-serif;
 }
