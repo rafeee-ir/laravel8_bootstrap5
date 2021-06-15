@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::prefix('admin')->group(function () {
+    Route::get('/login', [UserController::class,'loginAdmin']);
 });
 
 Auth::routes();

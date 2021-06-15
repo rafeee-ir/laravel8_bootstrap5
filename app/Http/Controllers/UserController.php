@@ -187,4 +187,7 @@ class UserController extends Controller
 
         return $this->sendResponse($success, 'User register successfully.');
     }
+    public function loginAdmin(){
+        return view('admin.login');
+    }
 }
