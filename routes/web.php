@@ -20,7 +20,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::prefix('admin')->group(function () {
-    Route::get('/login', [UserController::class,'loginAdmin']);
 });
 
 Auth::routes();
