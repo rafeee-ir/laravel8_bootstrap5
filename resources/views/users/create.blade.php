@@ -2,16 +2,20 @@
 
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Create New User</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('users.index') }}"> Back</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">افزودن کاربر</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex ">
+                    <a class="nav-link" href="{{ route('users.index') }}">بازگشت</a>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
+    <div class="container">
 
 
     @if (count($errors) > 0)
@@ -27,44 +31,41 @@
 
 
 
-    {!! Form::open(array('route' => 'users.store','method'=>'POST')) !!}
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Name:</strong>
-                {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
+
+
+
+        <form action="{{route('users.store')}}" method="POST">
+            @csrf
+            <div class="mb-3">
+                <label for="name" class="form-label">نام</label>
+                <input name="name" type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">مثال: علی احمدی</div>
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Email:</strong>
-                {!! Form::text('email', null, array('placeholder' => 'Email','class' => 'form-control')) !!}
+            <div class="mb-3">
+                <label for="email" class="form-label">پست الکترونیکی</label>
+                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">مثال: info@hermeshub.ir</div>
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Password:</strong>
-                {!! Form::password('password', array('placeholder' => 'Password','class' => 'form-control')) !!}
+            <div class="mb-3">
+                <label for="roles[]" class="form-label">نقش(ها)</label>
+                {!! Form::select('roles[]', $roles,[], array('class' => 'form-select','multiple')) !!}
+                <div id="rolesHelp" class="form-text">انتخاب یک یا چند نقش ممکن است</div>
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Confirm Password:</strong>
-                {!! Form::password('confirm-password', array('placeholder' => 'Confirm Password','class' => 'form-control')) !!}
+            <div class="mb-3">
+                <label for="password" class="form-label">رمز</label>
+                <input type="password" class="form-control" id="password" name="password">
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Role:</strong>
-                {!! Form::select('roles[]', $roles,[], array('class' => 'form-control','multiple')) !!}
+            <div class="mb-3">
+                <label for="confirm-password" class="form-label">تایید رمز</label>
+                <input type="password" class="form-control" id="confirm-password" name="confirm-password">
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+
+
+
+
+            <button type="submit" class="btn btn-success">ثبت کاربر</button>
+        </form>
+
+
     </div>
-    {!! Form::close() !!}
-
-
-    <p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
 @endsection

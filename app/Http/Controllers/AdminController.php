@@ -16,9 +16,5 @@ class AdminController extends Controller
 //        $this->middleware('permission:role-delete', ['only' => ['destroy']]);
     }
 
-    public function panel(Request $request)
-    {
-        return view('admin.panel');
 
-    }
 }

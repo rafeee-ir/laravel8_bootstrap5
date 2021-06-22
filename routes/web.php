@@ -29,7 +29,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
-    Route::prefix('admin')->group(function () {
-        Route::get('/panel', [AdminController::class,'panel'])->name('admin.panel');
-    });
+
 });
+//Route::prefix('admin')->group(function () {
+//    Route::get('/panel', [AdminController::class,'panel'])->name('admin.panel');
+//});
