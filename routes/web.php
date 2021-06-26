@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BodyInsController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -26,11 +27,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['middleware' => ['auth']], function() {
+Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
-
+    Route::prefix('ins')->group(function () {
+        Route::get('/body', [BodyInsController::class, 'index'])->name('admin.panel');
+    });
 });
-//Route::prefix('admin')->group(function () {
-//    Route::get('/panel', [AdminController::class,'panel'])->name('admin.panel');
-//});
+
