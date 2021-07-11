@@ -27,6 +27,8 @@
     },
     "dependencies": {
         "feather-icons": "^4.28.0",
-        "vazir-font": "^29.0.1"
+        "vazir-font": "^29.0.1",
+        "vue-select": "^3.11.2",
+        "vue-select2": "^0.2.6"
     }
 }
