@@ -7,11 +7,24 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
+//use Ixudra\Curl\Facades\Curl;
+
+//$response = Http::post('https://mdapp.kins.ir/login', [
+//
+//    'grand_type'=> 'password' ,
+//
+//    'password' => 'QWErty!@#456' ,
+//
+//    'username' => 'e.merkori'
+//
+//]);
+//$ewq = Http::get('https://mdapp.kins.ir/cins/rest/anvaGhataatKhodro/findByFilter');
+//print_r($ewq);
 //$client = new GuzzleHttp\Client();
 //$response = $client->post('https://mdapp.kins.ir/cins/login', [
 //    'auth' => [
 //        'e.merkori',
-//        'mermercury17031400'
+//        'QWErty!@#456'
 //    ]
 //]);
 //$response = $client->get('https://mdapp.kins.ir/cins/rest/anvaGhataatKhodro/findByFilter');
@@ -53,6 +66,10 @@ use Illuminate\Support\Facades\Http;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('get-curl', function () {
+
+});
 Route::get('/', function () {
     return view('welcome');
 });

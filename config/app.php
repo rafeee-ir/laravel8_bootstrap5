@@ -180,6 +180,8 @@ return [
         Spatie\Permission\PermissionServiceProvider::class,
 
         Hekmatinasser\Verta\Laravel\VertaServiceProvider::class,
+        Ixudra\Curl\CurlServiceProvider::class,
+
 
 
     ],
@@ -236,6 +238,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Verta' => Hekmatinasser\Verta\Verta::class,
+        'Curl' => Ixudra\Curl\Facades\Curl::class,
+
 
     ],
 
