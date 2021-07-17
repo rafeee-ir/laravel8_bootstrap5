@@ -43,26 +43,26 @@
 export default {
     name: "HomeComponent",
     mounted() {
-        let myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-        myHeaders.append("Cookie", "AWN=.kosar-app-05; SESSION=MTAyMjBhZDEtM2I1My00MmY4LWIzYzItYjllZTA0ZTcwNThh; cookiesession1=678ADA6DKLMNOPQRSTUV0123454A6BA3");
-
-        let urlencoded = new URLSearchParams();
-        urlencoded.append("username", "s.bakhshi");
-        urlencoded.append("password", "QWE!@#qwe123");
-        urlencoded.append("grant_type", "password");
-
-        let requestOptions = {
-            method: 'POST',
-            headers: myHeaders,
-            body: urlencoded,
-            redirect: 'follow'
-        };
-
-        fetch("https://mdapp.kins.ir/cins/login", requestOptions)
-            .then(response => response.text())
-            .then(result => console.log(result))
-            .catch(error => console.log('error', error));
+        // let myHeaders = new Headers();
+        // myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+        // myHeaders.append("Cookie", "AWN=.kosar-app-05; SESSION=MTAyMjBhZDEtM2I1My00MmY4LWIzYzItYjllZTA0ZTcwNThh; cookiesession1=678ADA6DKLMNOPQRSTUV0123454A6BA3");
+        //
+        // let urlencoded = new URLSearchParams();
+        // urlencoded.append("username", "s.bakhshi");
+        // urlencoded.append("password", "QWE!@#qwe123");
+        // urlencoded.append("grant_type", "password");
+        //
+        // let requestOptions = {
+        //     method: 'POST',
+        //     headers: myHeaders,
+        //     body: urlencoded,
+        //     redirect: 'follow'
+        // };
+        //
+        // fetch("https://mdapp.kins.ir/cins/login", requestOptions)
+        //     .then(response => response.text())
+        //     .then(result => console.log(result))
+        //     .catch(error => console.log('error', error));
 
         // var axios = require('axios');
         // var qs = require('qs');

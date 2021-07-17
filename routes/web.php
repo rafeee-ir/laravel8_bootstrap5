@@ -1,61 +1,10 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BodyInsController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Http;
-//use Ixudra\Curl\Facades\Curl;
-
-//$response = Http::post('https://mdapp.kins.ir/login', [
-//
-//    'grand_type'=> 'password' ,
-//
-//    'password' => 'QWErty!@#456' ,
-//
-//    'username' => 'e.merkori'
-//
-//]);
-//$ewq = Http::get('https://mdapp.kins.ir/cins/rest/anvaGhataatKhodro/findByFilter');
-//print_r($ewq);
-//$client = new GuzzleHttp\Client();
-//$response = $client->post('https://mdapp.kins.ir/cins/login', [
-//    'auth' => [
-//        'e.merkori',
-//        'QWErty!@#456'
-//    ]
-//]);
-//$response = $client->get('https://mdapp.kins.ir/cins/rest/anvaGhataatKhodro/findByFilter');
-//dd($response);
-//$headers = [
-//    'Content-Type' => 'application/x-www-form-urlencoded',
-//];
-//$client = new GuzzleClient([
-//    'headers' => $headers
-//]);
-//
-//$body = '{
-//"username" : "s.bakhshi",
-//"password" : "QWE!@#qwe123",
-//"grant_type" : "password"
-//}';
-//$r = $client->request('POST', 'https://mdapp.kins.ir/cins/login', [
-//    'body' => $body
-//]);
-//$response = $r->getBody()->getContents();
-//dd($response);
-//$resp = Http::withHeaders([
-//    'Content-Type' => 'application/x-www-form-urlencoded'
-//])->post('https://mdapp.kins.ir/cins/login',[
-//    'grant_type' => 'password',
-//    'password' => 'mermercury17031400',
-//    'username' => 'e.merkori'
-//]);
-//$resp = Http::withDigestAuth('e.merkori','mermercury17031400')->post('https://mdapp.kins.ir/cins/login');
-//$resp = Http::get('https://mdapp.kins.ir/cins/rest/anvaGhataatKhodro/findByFilter');
-//dd($resp->body());
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -67,9 +16,7 @@ use Illuminate\Support\Facades\Http;
 |
 */
 
-Route::get('get-curl', function () {
 
-});
 Route::get('/', function () {
     return view('welcome');
 });
