@@ -239,6 +239,7 @@ return [
 
         'Verta' => Hekmatinasser\Verta\Verta::class,
         'Curl' => Ixudra\Curl\Facades\Curl::class,
+        'Mdapp' => App\Helper\Mdapp::class,
 
 
     ],

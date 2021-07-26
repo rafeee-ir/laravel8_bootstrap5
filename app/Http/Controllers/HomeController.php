@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helper\Helper;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -16,8 +17,8 @@ class HomeController extends Controller
     public function __construct()
     {
 
-//  $test = Controller::apiGet('rest/takhfifJarimehAyinnameh96/findByFilter');
-//dd($test);
+  dd(Helper::Mdapp()->get('rest/takhfifJarimehAyinnameh96/findByFilter'));
+
         $this->middleware('auth');
     }
 
