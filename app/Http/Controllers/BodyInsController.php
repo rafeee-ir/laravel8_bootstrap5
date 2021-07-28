@@ -4,17 +4,28 @@ namespace App\Http\Controllers;
 
 use App\Models\BodyIns;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BodyInsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
-        return view('ins.body.index');
+        $user               =           Auth::user();
+        if(!is_null($user)) {
+            $bodyIns          =           BodyIns::all();
+            if(count($bodyIns) > 0) {
+                return response()->json(["status" => "success", "count" => count($bodyIns), "data" => $bodyIns], 200);
+            }
+
+            else {
+                return response()->json(["status" => "failed", "count" => count($bodyIns), "message" => "Failed! no Body-ins found"], 200);
+            }
+        }
     }
 
     /**
