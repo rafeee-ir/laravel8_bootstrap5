@@ -24,6 +24,7 @@ Vue.component('v-select', vSelect);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('home', require('./components/HomeComponent.vue').default);
+Vue.component('welcome', require('./components/WelcomeComponent.vue').default);
 
 // Ins/Body
 Vue.component('body-component', require('./components/ins/BodyComponent.vue').default);

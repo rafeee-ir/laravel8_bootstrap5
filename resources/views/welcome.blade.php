@@ -12,13 +12,11 @@
   </head>
 
 <body>
-    <div class="container pt-5">
-    <h1 class="text-center">هرمس هاب</h1>
-        <div class="alert alert-success mt-5" role="alert">
-            هرمس هاب زیرساخت آنلاین بیمه
-        </div>
-    </div>
-    <script src="{{ asset('js/app.js') }}"></script>
+<div id="app">
+    <welcome></welcome>
+</div>
+
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
 

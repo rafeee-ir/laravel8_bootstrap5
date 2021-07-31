@@ -93,4 +93,12 @@ class BodyInsController extends Controller
     {
         //
     }
+
+    public function takhfifJarimehAyinnameh96(){
+        return(Controller::apiGet('rest/takhfifJarimehAyinnameh96/findByFilter'));
+    }
+    public function estelamBadaneh(Request $request){
+
+        return response()->json([$request->all()], 200);
+    }
 }

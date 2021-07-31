@@ -38,14 +38,22 @@ use Illuminate\Support\Facades\Route;
 
 // user controller routes
 Route::post("register", [UserController::class, "register"]);
-
 Route::post("login", [UserController::class, "login"]);
 
 // sanctum auth middleware routes
 
-Route::middleware('auth:api')->group(function() {
+Route::middleware('auth:api')->group(function () {
 
     Route::get("user", [UserController::class, "user"]);
     Route::resource('body-ins', BodyInsController::class);
+
+    Route::prefix('khodro/body/')->group(function () {
+        Route::prefix('get/')->group(function () {
+            Route::get('takhfifJarimehAyinnameh96', [BodyInsController::class, "takhfifJarimehAyinnameh96"]);
+        });
+        Route::prefix('post/')->group(function () {
+            Route::post('estelamBadaneh', [BodyInsController::class, "estelamBadaneh"]);
+        });
+    });
 
 });
